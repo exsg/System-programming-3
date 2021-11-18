@@ -1,0 +1,49 @@
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Argentina
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Australia
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Brazil
+diseaseFrequency H1N1 10-10-1990 10-10-2040 China
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Denmark
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Egypt
+diseaseFrequency H1N1 10-10-1990 10-10-2040 France
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Germany
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Greece
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Italy
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Russia
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Switzerland
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Turkey
+diseaseFrequency H1N1 10-10-1990 10-10-2040 USA
+diseaseFrequency H1N1 10-10-1990 10-10-2040 Vietnam
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Argentina
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Australia
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Brazil
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 China
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Denmark
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Egypt
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 France
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Germany
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Greece
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Italy
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Russia
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Switzerland
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Turkey
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 USA
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040 Vietnam
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Argentina
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Australia
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Brazil
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 China
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Denmark
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Egypt
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 France
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Germany
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Greece
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Italy
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Russia
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Switzerland
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Turkey
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 USA
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040 Vietnam
+diseaseFrequency H1N1 10-10-1990 10-10-2040 
+diseaseFrequency FLU-2018 10-10-1990 10-10-2040
+diseaseFrequency COVID-2019 10-10-1990 10-10-2040
+

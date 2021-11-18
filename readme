@@ -1,0 +1,53 @@
+Επώνυμο : Εξοχίδης
+Όνομα : Γεώργιος
+ΑΜ : 1115 2011 00069
+
+Εργασία 3 Προγραμματισμός Συστήματος
+
+makefile(s) 
+Στο φάκελο  client 
+make-> Δημιουργεί εκτελέσιμο client.out 
+εκτέλεση
+./client.out -q queryFile -w 5 -sp 8888 -sip 192.168.1.10 
+όπου στο  sip μπαίνει η IP του server.
+
+Στο φάκελο server
+make-> Δημιουργεί εκτελέσιμο server.out 
+εκτέλεση
+./server.out -q 8888 -s 9999 -w 2 -b 4096
+
+Στο φάκελο master
+make-> Δημιουργεί εκτελέσιμο master.out 
+εκτέλεση
+./master.out -w 5 -b 4096 -s 192.168.1.10  -p 9999 -i input_dir
+Τρέχουμε πρώτα Σέρβερ με ορισματα μετά master και μετά client ( με αντίστοιχα ορισματα ) .
+Επεξήγηση. 
+Όταν ξεκινάει ο server , περιμένει τον master ( aggregator ) να μιλήσει με τα παιδιά του, να μοιράσει τις χώρες  στα παιδιά του και έπειτα τα παιδιά στέλνουν τα statistics ,(ζήτημα της 2ης εργασίας που δεν έχει υλοποιηθεί αλλά ο σκελετός υπάρχει) και ανοίγουν δικά τους sockets όπου περιμένουν να έρθουν εντολές απο το server τέλος στέλνουν στον server μέσω του descriptor όπου έγινε η επικοινωνία για τα statistics τις ip , port που αφορούν τα νέα sockets που δημιουργήθηκαν απο τα παιδιά οπως επίσης και τις χώρες για τις οποίες είναι υπέυθυνος κάθε worker. Η επικοινωνία σε κάθε περίπτωση , για όλους γίνεται μέσω του ίδιου protocol το οποίο έχω ορίσει. 
+Το protocol επικοινωνίας , λειτουργεί ως εξής.  Στέλνουμε σε έναν file descriptor ( πχ socket_id ) ένα string* και το μέγεθός του ( δηλαδή το πόσες γραμμές έχει ) ενώ λαμβάνουμε απο τον fd τον πίνακα απο strings και το μέγεθος αντιστοιχα. ( στις περισσότερες εντολές δεν χρειάζεται μέγεθος πάνω απο 1 εκτός απο το top-k ). Είναι ακριβώς το ίδιο που έχω υλοποιήσει στη 2η άσκηση με τη διαφορά οτι αντί για pipes χρησιμοποιούντε sockets ( και φυσικά οι αντίστοιχοι descriptors ). 
+Ο σερβερ λαμβάνει τις πληροφορίες αυτές και τις αποθηκεύει σε μία δομή ( MasterWorker ) έτσι ώστε να είναι σε θέση να επικοινωνήσει με τους workers όταν λάβει ερωτήματα απο τον Client. 
+Δεν έχει υλοποιηθεί κάποιο spell checking που σημαίνει οτι δεν έχω φροντίσει να τσεκάρω σε περίπτωση που κάποια εντολή είναι εσφαλμένη τι θα κάνει το πρόγραμμα. ( λόγω περιορισμένου χρόνου, χρειαζόμουν τουλάχιστον 1 εβδομάδα ακόμα για να είναι τέλειο το πρόγραμμα ) . 
+Όλες οι εντολές λειτουργούν για σωστά queries.
+
+Σε περίπτωση που χρειαστεί...
+
+g++ -o aggregator -pthread aggregator_main.cpp AggregatorShell.cpp AggregatorShell.h Country.cpp Country.h CountryInfo.cpp CountryInfo.h Date.cpp Date.h errors.cpp errors.h Protocol.cpp Protocol.h Worker.h worker_main.cpp WorkerShell.cpp WorkerShell.h Patient.cpp Patient.h
+
+./aggregator -w 5 -b 4096 -s 192.168.1.10  -p 9999 -i input_dir
+
+g++ -o server -pthread server_main.cpp Server.cpp Server.h CountryInfo.cpp CountryInfo.h Date.cpp Date.h errors.cpp errors.h Protocol.cpp Protocol.h Queue.cpp Queue.h ServerConfiguration.cpp ServerConfiguration.h MasterWorker.cpp MasterWorker.h
+
+
+./server -q 8888 -s 9999 -w 2 -b 4096
+
+g++ -o whoClient -pthread  whoClient.cpp whoClientRead.cpp whoClientRead.h Queue.cpp Queue.h Protocol.cpp Protocol.h
+
+./whoClient -q queryFile -w 5 -sp 8888 -sip 192.168.1.10
+
+Ο χρόνος δεν φτάνει για debug στο σύστημα της σχολής, αναγκαστικά παραδίδω την εργασία έτσι και με -15%, υπάρχει πρόβλημα στο linux της σχολής στη server-master επικοινωνία, γίνεται partial read και δεν μπορώ να βρώ το σφάλμα και ο client δεν στέλνει τα αιτήματά του , είχε και segmentation fault το οποίο το έφτιαξα μετά απο αρκετές ώρες.Είναι υπερβολικά χρονοβόρο χωρίς breakpoints. Δεν ξέρω πόσο αποδωτικό θα ήταν σε κάθε new version του προγράμματος να το έτρεχα στα linux αφού έτσι και αλλιώς αυτή η διαδικασία είναι απο μόνη της χρονοβόρα. 
+Νομίζω πως είναι προφανές οτι 20 μέρες δεν ήταν αρκετές για την υλοποίηση μιας τόσο σύνθετης εργασίας με τόσα καινούριους μηχανισμούς, πέρα απο το γεγονός οτι ήμουν ήδη στις 3 μερες παραταση με την προηγούμενη ( άρα και απο εκεί -15% ). 
+Το πρόγραμμα τρέχει κανονικά στο δικό μου linux. Ελπίζω να έχω την ευκαιρία για absolution στην προφορική εξέταση. Μέχρι τότε θα τα έχω λύσει τα προβλήματα ( ελπίζω ).
+
+
+
+
+ 

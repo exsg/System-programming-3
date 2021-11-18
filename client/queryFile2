@@ -1,0 +1,20 @@
+/topk-AgeRanges 4 Greece COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 4 Germany COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 4 China COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 3 Greece COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 3 Germany COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 3 China COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 2 Greece COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 2 Germany COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 2 China COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 1 Greece COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 1 Germany COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 1 China COVID-2019 01-01-2000 01-01-2020
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 China
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 Germany
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 Greece
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Greece
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 China
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Germany
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020
+

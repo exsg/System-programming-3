@@ -1,0 +1,17 @@
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Germany
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Denmark
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Russia
+/diseaseFrequency COVID-2019 01-01-2000 01-01-2020 Switzerland
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020
+/numPatientAdmissions COVID-2019 01-01-2000 01-01-2020 Germany
+/numPatientAdmissions COVID-2019 01-01-2000 01-01-2020 Russia
+/numPatientAdmissions COVID-2019 01-01-2000 01-01-2020 Denmark
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 China
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 Germany
+/numPatientDischarges COVID-2019 01-01-2000 01-01-2020 Greece
+/numPatientAdmissions COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 2 Germany COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 3 Italy COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 3 Greece COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 4 China COVID-2019 01-01-2000 01-01-2020
+/topk-AgeRanges 4 Greece EVD 01-01-2000 01-01-2020
